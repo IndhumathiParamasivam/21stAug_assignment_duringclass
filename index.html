@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <script>
+            function myFunction()
+            {
+                var height=document.getElementById("container").clientHeight;
+                document.getElementById("image").style.height=height+"px";
+                console.log("..........."+height);
+            }
+        </script>
+        <style>
+            body
+            {   flex-direction: row;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+            }
+            #container{
+                text-align: left;
+                border-style:  hidden;
+                background :lightseagreen;
+                color: white;
+                padding-left: 30px;
+                padding-right: 30px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                width: 300px;
+            }
+            #innercontainer
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            ul
+            {
+                list-style:none;
+                display: flex;
+                flex-direction: column;
+                padding-left: 0px;
+            }
+            img{
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                height : 242.5px;
+            }
+            p{
+                text-align: justify;
+                font-size: smaller;
+                font-family: 'Allison', cursive;
+            }
+            .element
+            {
+                font-size: 10px;
+                text-transform: uppercase;
+            }
+            h5{
+                margin:0px;
+                color: rgb(211, 34, 34);
+            }
+            span{
+                color: rgb(114, 4, 114);
+            }
+        </style>
+    </head>
+    <body onresize="myFunction()">
+        <div id="container"><h2>Get <span>insights</span> that help your business grow.</h2>
+        <p>Discover the benefits of data analystics and make better decisions regarding revenue,customer experience and overall efficiency</p>
+            <div id="innercontainer">
+                <ul><li><h5>10K+</h5></li>
+                    <li class="element">companies</li></ul>
+                <ul><li><h5>314</h5></li>
+                    <li class="element">templates</li></ul>
+                <ul><li><h5>12M+</h5></li>
+                    <li class="element">Queries</li></ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+        <img id="image" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/4RO11G7TAF.jpg">
+    </body>
+</html>
